@@ -3,6 +3,7 @@ package org.miguel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  *  Test cases:
@@ -22,7 +23,7 @@ public class FibonacciTest {
 
     @BeforeEach
     public void setup(){
-        Fibonacci fibonacci = new Fibonacci();
+        fibonacci = new Fibonacci();
     }
 
     @Test
@@ -81,5 +82,8 @@ public class FibonacciTest {
         assertEquals(expectedValue, obtainedValue);
     }
 
-
+    @Test
+    public void shouldRaiseAnExceptionIfNumberIsNegative(){
+        assertThrows(RuntimeException.class, () -> fibonacci.compute(-1));
+    }
 }

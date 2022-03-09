@@ -2,7 +2,7 @@ package org.miguel;
 
 public class Fibonacci {
 
-    public int fibonacci(int n){
+    public int compute(int n){
         return 0;
     }
 }

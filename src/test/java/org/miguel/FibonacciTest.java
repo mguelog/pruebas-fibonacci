@@ -6,7 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
- *  Test cases:
+ * This class uses jUnit 5.8.2 for testing {@link Fibonacci#compute(int)}
+ *
+ * Test cases:
  *  Should compute zero if number is zero
  *  Should compute one if number is one
  *  Should compute one if number is two

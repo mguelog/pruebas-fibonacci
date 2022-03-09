@@ -1,5 +1,12 @@
 package org.miguel;
 
+/**
+ * This class provides a method that returns the n-positioned number
+ * of the Fibonacci sequence
+ *
+ * @author Miguel Oña Guerrero
+ */
+
 public class Fibonacci {
 
     public int compute(int n){
